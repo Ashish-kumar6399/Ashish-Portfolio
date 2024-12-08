@@ -1,0 +1,128 @@
+/* Global styles for About Me section */
+.about-heading {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-heading h1 {
+    font-size: 50px;
+    background: linear-gradient(to right, rgb(227, 68, 227), rgb(239, 169, 41) 80%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-img img {
+    width: 300px;
+    border-radius: 5px;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.about-text-container {
+    margin-left: 40px;
+    width: 60%;
+}
+
+.about-skills {
+    margin-top: 30px;
+}
+
+.about-skills li {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.about-skill{
+    display: flex;
+    flex-direction: row;
+    /* gap: 20px; */
+}
+
+.about-skill p{
+    min-width: 130px;
+}
+
+.about-skill hr{
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 8px;
+    border-radius: 50px;
+    background: linear-gradient(to right, rgb(227, 68, 227), rgb(239, 169, 41) 80%);
+}
+
+/* Responsive Styles */
+
+/* Large tablets and smaller laptops */
+@media (max-width: 992px) {
+    .about-heading h1 {
+        font-size: 40px;
+    }
+
+    .about-img img {
+        width: 250px;
+    }
+
+    .about-text-container {
+        margin-left: 20px;
+        width: 70%;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-img {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-img img {
+        width: 200px;
+    }
+
+    .about-text-container {
+        width: 80%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .about-skills {
+        margin-top: 30px;
+    }
+
+    .about-skills li {
+        font-size: 14px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 576px) {
+    .about-heading h1 {
+        font-size: 30px;
+    }
+
+    .about-img img {
+        width: 100%;
+    }
+
+    .about-text-container {
+        width: 90%;
+    }
+
+    .about-skills li {
+        font-size: 12px;
+    }
+}

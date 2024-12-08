@@ -1,0 +1,123 @@
+/* Global Styles for Navbar */
+.navbar-sself {
+    background-color: rgb(56, 54, 54) !important;
+    padding: 10px 20px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navbar-container a{
+    transition: 0.3s;
+}
+
+.nav-list {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-list li a {
+    color: white;
+    font-size: 1rem;
+}
+
+.navbar-logo {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 25%;
+}
+
+@media (min-width: 1000px) and (max-width: 1250px) {
+    .navbar-logo {
+        color: white;
+        font-size: 1.5rem;
+        margin-right: 18%;
+    }
+}    
+
+.navbar-connect {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: linear-gradient(to right, rgb(227, 68, 227), rgb(239, 169, 41) 80%);
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar-container a:hover{
+    background: linear-gradient(to right, rgb(227, 68, 227) , rgb(239, 169, 41) 80%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.1);
+}
+
+.nav-list li a:hover {
+    background: linear-gradient(to right, rgb(227, 68, 227) , rgb(239, 169, 41) 80%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar-connect:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-container {
+        gap: 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .nav-list li a {
+        font-size: 1.1rem;
+    }
+
+    .navbar-connect {
+        padding: 8px 16px;
+        font-size: 14px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-logo{
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar-logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-list li a {
+        font-size: 1rem;
+    }
+
+    .navbar-connect {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+}
+
+
+.navbar-toggler-icon{
+    color: white;
+}
